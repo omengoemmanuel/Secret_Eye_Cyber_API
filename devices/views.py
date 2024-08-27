@@ -8,3 +8,7 @@ from rest_framework import viewsets
 class shopview(viewsets.ModelViewSet):
     queryset = shop.objects.all()
     serializer_class = shopserializer
+
+
+def viewdata(request):
+    return render(request, 'viewdata.html')
