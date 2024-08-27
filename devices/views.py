@@ -11,4 +11,5 @@ class shopview(viewsets.ModelViewSet):
 
 
 def viewdata(request):
-    return render(request, 'viewdata.html')
+    view1 = shop.objects.all()
+    return render(request, 'viewdata.html', {'view1': view1})
